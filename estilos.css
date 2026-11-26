@@ -1,0 +1,160 @@
+/* 1. Estilos generales de la pagina */
+body {
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    margin: 0; /* Margen */
+    padding: 0;
+    background-color: #f2f3f5; /* Color de fondo */
+    color: #222; /* Color del texto */
+}
+
+/* Encabezado (Header) */
+header {
+    background-color: #8b1e24; /* Rojo escarlata USMC */
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #c59b27; /* Detalle dorado */
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+/* 3. Menú de navegación */
+nav {
+    background-color: #1e2229; /* Fondo oscuro de la barra de menu */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none; /* Quitar viñetas de la lista */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Pone los elementos en fila, uno al lado del otro */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none; /* Quitar el subrayado del enlace */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #e2be52; /* Dorado al pasar el mouse */
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
+
+/* 4. Contenedor principal */
+.contenedor {
+    display: flex; /* Activa el modo flex */
+    flex-wrap: wrap; /* Permite que las filas se adapten segun el tamaño de la pantalla */
+    gap: 20px; /* Espacio entre la seccion y el aside */
+    padding: 20px;
+}
+
+/* 5. Sección principal (columna ancha) */
+.contenedor section {
+    flex: 3; /* Ocupa más espacio que el aside */
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #d8dde3;
+}
+
+.contenedor section h2 {
+    color: #8b1e24;
+    border-bottom: 2px solid #c59b27;
+    padding-bottom: 4px;
+}
+
+.contenedor section h3 {
+    color: #1e2229;
+}
+
+/* 6. Aside (columna angosta, contenido secundario) */
+.contenedor aside {
+    flex: 1; /* Ocupa menos espacio que la sección */
+    background-color: #e6e8ec;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #cfd4dc;
+}
+
+.contenedor aside h2 {
+    color: #8b1e24;
+}
+
+/* 7. Artículos dentro de la sección */
+article {
+    margin-bottom: 20px;
+}
+
+/* 8. Imágenes: que nunca se salgan de su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 9. Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Une los bordes de las celdas */
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #c5cbd3;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #8b1e24;
+    color: #ffffff;
+}
+
+/* 10. Formulario de contacto */
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    padding: 5px;
+    width: 200px;
+    margin-top: 5px;
+    border: 1px solid #b5bcc4;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    background-color: #8b1e24;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background-color: #691419;
+}
+
+/* 11. Pie de página (footer) */
+footer {
+    background-color: #1e2229;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid #c59b27;
+}
+
+footer a {
+    color: #e2be52;
+}
